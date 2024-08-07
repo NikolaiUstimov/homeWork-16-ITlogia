@@ -12,7 +12,7 @@
             this.answersBox = document.getElementById('answers-box');
 
             this.showUser();
-            //Получаем тест из сессии браузера
+            //Получение теста из сессии браузера
             if (savedAnswers) {
                 this.answers = JSON.parse(savedAnswers).forEach(test => {
                     this.nameTest.innerText = test.name;

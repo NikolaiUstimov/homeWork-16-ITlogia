@@ -5,7 +5,7 @@
         init: function () {
             checkUserData();
 
-            //Записываем данные пользоватия в сессию браузера
+            //Запись данных пользователя в сессию браузера
             const url = new URL(location.href);
             const infoUserArr = [];
             const testUserName = url.searchParams.get('name');

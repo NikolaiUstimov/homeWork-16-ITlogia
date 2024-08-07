@@ -124,12 +124,14 @@
 
             if(chosenOption && chosenOption.chosenAnswerId) {
                 this.nextButtonElement.removeAttribute('disabled');
+                //Установка кнопки "Пропустить вопрос" неактивной, если выбран елемент
                 this.passButtonElement.classList.add('disabled');
                 this.passButtonElement.onclick = null;
                 this.passButtonElementIMG.removeAttribute('src');
                 this.passButtonElementIMG.setAttribute('src', 'assets/images/arrow-right-gray.png');
             } else {
                 this.nextButtonElement.setAttribute('disabled', 'disabled');
+                //Установка кнопки "Пропустить вопрос" активной, если не выбран елемент
                 this.passButtonElement.classList.remove('disabled');
                 this.passButtonElement.onclick = this.move.bind(this, 'pass');
                 this.passButtonElementIMG.removeAttribute('src');
@@ -149,6 +151,7 @@
         },
         chooseAnswer() {
             this.nextButtonElement.removeAttribute('disabled');
+            //Установка кнопки "Пропустить вопрос" неактивной
             this.passButtonElement.classList.add('disabled');
             this.passButtonElement.onclick = null;
             this.passButtonElementIMG.removeAttribute('src');
