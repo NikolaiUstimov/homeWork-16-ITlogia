@@ -1,0 +1,60 @@
+.answers {
+    padding: 20px 0;
+}
+
+.answers-question {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 60px;
+}
+
+.answers-question-description {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(220, 220, 243);
+}
+
+.answers-question-description img {
+    margin-left: 15px;
+}
+
+.answers-questions-text {
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(105, 51, 220);
+}
+
+.answers-title {
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.answers-user {
+    font-size: 20px;
+}
+
+.answers-user span {
+    font-family: "Museo Sans Cyrl Bold", sans-serif;
+    font-size: 20px;
+    color: rgb(105, 51, 220);
+}
+
+.answer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 60px 0;
+}
+
+.answer-question-options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.back-result-test {
+    display: flex;
+    justify-content: flex-end;
+}

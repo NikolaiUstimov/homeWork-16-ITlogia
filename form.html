@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+
+<header class="header">
+  <article class="container">
+    <figure class="logo">
+      <img src="assets/images/logo.png" alt="Логотип">
+    </figure>
+  </article>
+</header>
+
+<section class="form">
+  <div class="container">
+    <article class="form-content">
+      <h1 class="form-title common-title">Введите свои <span>данные</span></h1>
+      <form action="" class="form-details">
+        <fieldset class="form-group">
+          <input type="text" class="form-input" id="name" required>
+          <label for="name" class="form-label">Имя</label>
+        </fieldset>
+        <fieldset class="form-group">
+          <input type="text" class="form-input" id="last-name" required>
+          <label for="last-name" class="form-label">Фамилия</label>
+        </fieldset>
+        <fieldset class="form-group">
+          <input type="text" class="form-input" id="email" required>
+          <label for="email" class="form-label">Электронная почта</label>
+        </fieldset>
+        <fieldset class="form-agree">
+          <input type="checkbox" id="agree" required>
+          <label for="agree">Я ознакомлен <a href="#">с правилами сайта</a></label>
+        </fieldset>
+      </form>
+      <div class="form-button">
+        <button id="process" class="button" disabled>Перейти к выбору теста</button>
+      </div>
+    </article>
+    <figure class="form-image">
+      <img src="assets/images/info-image.png" alt="Персонаж">
+    </figure>
+  </div>
+</section>
+
+<footer class="footer">«АйтилогияQuiz» © Все права защищены / 2022</footer>
+
+<script src="scripts/form.js"></script>
+</body>
+</html>

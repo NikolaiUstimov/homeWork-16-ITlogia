@@ -1,0 +1,112 @@
+.test {
+    padding: 20px 0 50px 0;
+}
+
+.test-pre-title {
+    font-size: 20px;
+    color: rgb(220, 220, 243);
+}
+
+.test-progress-bar {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+
+/*Здесь были стили для тестов*/
+
+.test-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.test-time {
+    display: flex;
+    align-items: center;
+}
+
+.test-time-text {
+    font-size: 17px;
+    line-height: 20px;
+    color: rgb(105, 51, 220);
+    margin-right: 15px;
+}
+
+.test-time-clock {
+    background-image: url("../assets/images/time.png");
+    background-size: cover;
+    background-position: center;
+    width: 27px;
+    height: 29px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.pass-question {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.test-progress-bar-item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.test-progress-bar-item:not(:first-child) {
+    margin-left: 130px;
+}
+
+.test-progress-bar-item:not(:last-child)::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 184px;
+    height: 6px;
+    background-color: rgb(220, 220, 243);
+    top: 10px;
+    left: 30px;
+}
+
+.test-progress-bar-item.complete:not(:last-child)::before {
+    background-color: rgb(105, 51, 220);
+}
+
+.test-progress-bar-item-circle {
+    width: 26px;
+    height: 26px;
+    background-color: rgb(220, 220, 243);
+    border-radius: 50%;
+}
+
+.test-progress-bar-item-text {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 10px;
+}
+
+.test-progress-bar-item.complete .test-progress-bar-item-circle,
+.test-progress-bar-item.active .test-progress-bar-item-circle {
+    background-color: rgb(105, 51, 220);
+}
+
+.test-progress-bar-item.active::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    width: 14px;
+    height: 14px;
+    background-color: rgb(220, 220, 243);
+    top: 6px;
+}
+
+.disabled {
+    pointer-events: none;
+    color: gray;
+}

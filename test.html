@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Решение теста</title>
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/test.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <figure class="logo">
+      <img src="assets/images/logo.png" alt="Логотип">
+    </figure>
+  </div>
+</header>
+
+<section class="test">
+  <div class="container">
+    <p id="pre-title" class="test-pre-title">Тест №1. “JavaScript: Начальный уровень”</p>
+    <div id="progress-bar" class="test-progress-bar">
+
+    </div>
+    <article class="test-question">
+      <h2 id="title" class="test-question-title">
+        <span>Вопрос 2:</span> Тут должен быть текст вопроса?
+      </h2>
+      <ul id="options" class="test-question-options">
+      </ul>
+    </article>
+    <div class="test-actions">
+      <div class="test-previous-action">
+        <button id="prev" class="button button-transparent" disabled>Назад</button>
+      </div>
+      <div class="test-time">
+        <p class="test-time-text">Осталось времени:</p>
+        <p id="timer" class="test-time-clock">59</p>
+      </div>
+      <div class="test-next-action">
+        <button id="next" class="button button-transparent" disabled>Далее</button>
+      </div>
+    </div>
+    <p class="go-forward pass-question">
+      <a href="javascript:void(0)" id="pass">Пропустить вопрос <img id="arrow-change" src="assets/images/arrow-small.png" alt="Стрелка"></a>
+    </p>
+  </div>
+</section>
+
+<footer class="footer">«АйтилогияQuiz» © Все права защищены / 2022</footer>
+
+<script src="scripts/common.js"></script>
+<script src="scripts/test.js"></script>
+</body>
+</html>
